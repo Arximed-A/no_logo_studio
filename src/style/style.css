@@ -8,16 +8,18 @@
   line-height: 1.882;
 }
 
+a {
+  text-decoration: none;
+}
+
 .page {
   max-width: 1920px;
   margin: 0px auto;
-  background-color: grey;
 }
 
-.container {
+._container {
   max-width: 960px;
   margin: 0px auto;
-  background-color: red;
 }
 
 .btn {
@@ -25,7 +27,7 @@
   border-radius: 20px;
   background: transparent;
   height: 42px;
-  padding: 0px 27px;
+  padding: 0px 23px;
   font-family: Roboto;
   color: rgb(203, 0, 61);
   font-weight: bold;
@@ -33,34 +35,74 @@
 }
 .header {
   position: fixed;
+  left: 0;
+  right: 0;
+  width: 960px;
+  border-bottom: 1px solid #e0e1e1;
   margin: 0px auto;
+  background-color: #fff;
 }
 .header__container {
-  height: 91px;
+  height: 92px;
   display: flex;
-  align-items: center;
-  width: 960px;
+  align-items: flex-end;
+  padding: 0px 0px 19px 0px;
 }
-.header__wrapper {
+.header__wrapper-image {
   flex: 1 1 auto;
 }
 .header__logo {
-  height: 33px;
+  height: 37px;
+  position: relative;
+  top: 10px;
 }
 .header__phone {
   font-size: 18px;
   color: rgb(81, 83, 89);
-  text-decoration: none;
-  margin: 0px 38px 0px 30px;
+  margin: 0px 38px 0px 31px;
   position: relative;
 }
 .header__phone::before {
   content: "";
   display: block;
-  background: url("../../assets/icon/phone.jpg");
+  background: url(https://raw.githubusercontent.com/Arximed-A/no_logo_studio/main/src/assets/icon/phone.jpg) center no-repeat;
   position: absolute;
-  left: -30px;
+  left: -31px;
   top: 0;
   width: 25px;
   height: 27px;
+}
+.main__menu {
+  padding: 92px 0px 0px 0px;
+}
+.main__text {
+  background: url("../../assets/img/background.png");
+}
+.menu {
+  height: 170px;
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  font-size: 13px;
+  margin: 0px 48px 0px 0px;
+  color: rgb(81, 83, 89);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.text-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text-main__item {
+  font-size: 60px;
+}
+.text-main__item_white {
+  font-weight: 700;
+}
+.text-main__item_black {
+  font-size: 100px;
 }
