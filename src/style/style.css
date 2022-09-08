@@ -1,0 +1,66 @@
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: rgb(70, 72, 77);
+  line-height: 1.882;
+}
+
+.page {
+  max-width: 1920px;
+  margin: 0px auto;
+  background-color: grey;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+  background-color: red;
+}
+
+.btn {
+  border: solid 2px rgb(151, 155, 166);
+  border-radius: 20px;
+  background: transparent;
+  height: 42px;
+  padding: 0px 27px;
+  font-family: Roboto;
+  color: rgb(203, 0, 61);
+  font-weight: bold;
+  cursor: pointer;
+}
+.header {
+  position: fixed;
+  margin: 0px auto;
+}
+.header__container {
+  height: 91px;
+  display: flex;
+  align-items: center;
+  width: 960px;
+}
+.header__wrapper {
+  flex: 1 1 auto;
+}
+.header__logo {
+  height: 33px;
+}
+.header__phone {
+  font-size: 18px;
+  color: rgb(81, 83, 89);
+  text-decoration: none;
+  margin: 0px 38px 0px 30px;
+  position: relative;
+}
+.header__phone::before {
+  content: "";
+  display: block;
+  background: url("../../assets/icon/phone.jpg");
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 25px;
+  height: 27px;
+}
